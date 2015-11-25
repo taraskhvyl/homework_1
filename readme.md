@@ -1,4 +1,4 @@
-> Инструкции по установке моего приложения
+> Инструкции по установке моего сайта
 1. git clone https://github.com/taraskhvyl/homework_1.git site
 2. cd site
 3. bower i
