@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="ru_RU">
+<head>
+    <meta charset="UTF-8">
+    <title>Первая домашка</title>
+    <link rel="stylesheet" href="bower/normalize-css/normalize.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/sign.css">
+</head>
+<body>
+    <div class="wrapper">
+       <div class="page-sign-in">
+            <div class="block-sign-in">
+               <div class="form-sign-in">
+                    <small>Авторизируйтесь</small>
+                    <form action="#">
+                        <input type="text" placeholder="Введите Email">
+                        <input type="text" class="input-password" placeholder="Введите пароль">
+                        <div class="block-checkbox">
+                            <input type="checkbox" id="save-me"><label for="save-me" class="text-save-me">Запомнить меня?</label>
+                        </div>
+                        <button type="submit" class="button-sign-in">Войти</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <div class="container">
+            <div class="footer__sign_in">
+                <a href="/sign.html">
+                    <i class="sprite sprite_lock"></i>
+                    вход
+                </a>
+            </div>
+            <small class="footer__copyright">
+                © 2015. Это мой сайт, пожалуйста, не копируйте и не воруйте его!
+            </small>
+        </div>
+    </footer>
+    <script src="bower/jquery/dist/jquery.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>

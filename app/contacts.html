@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="ru_RU">
+<head>
+    <meta charset="UTF-8">
+    <title>Первая домашка</title>
+    <link rel="stylesheet" href="bower/normalize-css/normalize.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/contacts.css">
+</head>
+<body>
+    <div class="wrapper">
+        <header class="header">
+            <div class="container container_wide">
+                <div class="header__logo">
+                    <a href="/">
+                        <img src="img/logo.png" alt="Logo">
+                        <span style="position:absolute;left:-9999px;">Loftschool. от мыслителя к создателю</span>
+                    </a>
+                </div>
+                <ul class="header__social">
+                    <li class="header__social-item">
+                        <a href="#" target="_blank" class="sprite sprite-fb">Facebook</a>
+                    </li>
+                    <li class="header__social-item">
+                        <a href="#" target="_blank" class="sprite sprite-vk">Вконтакте</a>
+                    </li>
+                    <li class="header__social-item">
+                        <a href="#" target="_blank" class="sprite sprite-tw">Twitter</a>
+                    </li>
+                    <li class="header__social-item">
+                        <a href="#" target="_blank" class="sprite sprite-git">Github</a>
+                    </li>
+                </ul>
+            </div>
+        </header>
+        <div class="main-content">
+            <div class="container">
+                <aside class="sidebar">
+                    <nav class="nav">
+                        <ul class="nav__list">
+                            <li class="nav__list-item">
+                                <a href="/" class="nav-link">
+                                    Обо мне
+                                </a>
+                            </li>
+                            <li class="nav__list-item">
+                                <a href="/works.html" class="nav-link">
+                                    Мои Работы
+                                </a>
+                            </li>
+                            <li class="nav__list-item">
+                                <a href="/contacts.html" class="nav-link active">
+                                    Обратная связь
+                                </a>
+                            </li>
+                        </ul>
+                    </nav>
+                    <div class="sidebar__contacts">
+                        <ul class="contacts__list">
+                            <li class="contacts__list-item list_heading">
+                                Контакты
+                           </li>
+                            <li class="contacts__list-item list_not_heading">
+                                <div class="contacts-icon"> 
+                                    <i class="icon_mail sprite"></i>                                   
+                                </div>
+                                <a href="mailto:pochta@mail.ru" class="contacts-link">
+                                    pochta@mail.ru
+                                </a>
+                            </li>
+                            <li class="contacts__list-item list_not_heading">
+                                <div class="contacts-icon">
+                                    <i class="icon_tel sprite"></i>                                         
+                                </div>
+                                <a href="tel:+79812342323" class="contacts-link">
+                                    +79812342323
+                                </a>
+                            </li>
+                            <li class="contacts__list-item list_not_heading">
+                                <div class="contacts-icon">  
+                                    <i class="icon_skype sprite"></i>                                       
+                                </div>
+                                <a href="skype:nickname" class="contacts-link">
+                                    nickname
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </aside>
+                <section class="content">
+                    <div class="content__info">
+                        <div class="info_heading">У вас интересный проект? Напишите мне</div>
+                        <div class="info_content">
+                            <form action="#">
+                                <div class="form-block">
+                                    <div class="form-block__two-col first">
+                                        <label for="name">Имя</label>
+                                        <input type="text" id="name" placeholder="Как к Вам обращаться">
+                                    </div>
+                                    <div class="form-block__two-col">
+                                        <label for="name">Email</label>
+                                        <input type="text" id="name" placeholder="Куда мне писать">
+                                    </div>
+                                    <div class="form-block__textarea">
+                                       <label for="message">Сообщение</label>
+                                        <textarea name="message" id="message" placeholder="Кратко в чем суть"></textarea>
+                                    </div>
+                                    <div class="captha-block">
+                                        <p class="write-code">Введите код, указанный на картинке</p>
+                                        <div class="form-block__two-col first">
+                                            <img src="img/captcha.png" alt="Капча">
+                                        </div>
+                                        <div class="form-block__two-col">
+                                            <input type="text" placeholder="Введите код" class="input-captcha">
+                                        </div>
+                                    </div>
+                                    <div class="form-block__two-col first">
+                                        <button type="submit" class="button-submit">Отправить</button>
+                                    </div>
+                                    <div class="form-block__two-col">
+                                        <button type="submit" class="button-clear">Очистить</button>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </section>
+                <div class="clearfix"></div>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <div class="container">
+            <div class="footer__sign_in">
+               <a href="/sign.html">
+                <i class="sprite sprite_lock"></i>
+                вход
+                </a>
+            </div>
+            <small class="footer__copyright">
+                © 2015. Это мой сайт, пожалуйста, не копируйте и не воруйте его!
+            </small>
+        </div>
+    </footer>
+    <script src="bower/jquery/dist/jquery.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>
