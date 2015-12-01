@@ -8,6 +8,7 @@
 .info_content__user-image img{
     background-color:  #f7f6f5;
     border: 10px solid #fff;
+    border-radius: 50%;
 }
 
 .info_content__user-info{
@@ -87,15 +88,15 @@
     width: 27px;
     height: 18px;
     background-position: -167px -5px;
-    margin-left: -2px;
-    margin-top: 4px;
+    margin-left: -4px;
+    margin-top: 2px;
 }
 .sprite_list{
     width: 15px;
     height: 20px;
     background-position: -132px -33px;
-    margin-left: 4px;
-    margin-top: 3px;
+    margin-left: 2px;
+    margin-top: 1px;
 }
 
 .skill-item{

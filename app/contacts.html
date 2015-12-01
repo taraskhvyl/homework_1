@@ -3,9 +3,22 @@
 <head>
     <meta charset="UTF-8">
     <title>Первая домашка</title>
-    <link rel="stylesheet" href="bower/normalize-css/normalize.css">
+    
+    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="img/favicon.ico" type="image/x-icon">
+    
+    <link rel="stylesheet" href="bowerlibrary/normalize.css">
     <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="css/contacts.css">
+    <!--[if IE]>
+        <script src="bowerlibrary/html5shiv.js"></script>
+        <script src="bowerlibrary/jquery.placeholder.js"></script>
+        <script>
+            $(document).ready(function(){
+                $('input, textarea').placeholder();
+            });
+        </script>
+    <![endif]-->
 </head>
 <body>
     <div class="wrapper">
@@ -64,24 +77,24 @@
                                 <div class="contacts-icon"> 
                                     <i class="icon_mail sprite"></i>                                   
                                 </div>
-                                <a href="mailto:pochta@mail.ru" class="contacts-link">
-                                    pochta@mail.ru
+                                <a href="mailto:taras.khvyl@gmail.com" class="contacts-link">
+                                    taras.khvyl@gmail.com
                                 </a>
                             </li>
                             <li class="contacts__list-item list_not_heading">
                                 <div class="contacts-icon">
                                     <i class="icon_tel sprite"></i>                                         
                                 </div>
-                                <a href="tel:+79812342323" class="contacts-link">
-                                    +79812342323
+                                <a href="tel:+380502367554" class="contacts-link">
+                                    +380502367554
                                 </a>
                             </li>
                             <li class="contacts__list-item list_not_heading">
                                 <div class="contacts-icon">  
                                     <i class="icon_skype sprite"></i>                                       
                                 </div>
-                                <a href="skype:nickname" class="contacts-link">
-                                    nickname
+                                <a href="skype:tarik_ukraine" class="contacts-link">
+                                    tarik_ukraine
                                 </a>
                             </li>
                         </ul>
@@ -118,7 +131,7 @@
                                         <button type="submit" class="button-submit">Отправить</button>
                                     </div>
                                     <div class="form-block__two-col">
-                                        <button type="submit" class="button-clear">Очистить</button>
+                                        <button type="reset" class="button-clear">Очистить</button>
                                     </div>
                                 </div>
                             </form>
@@ -142,7 +155,15 @@
             </small>
         </div>
     </footer>
-    <script src="bower/jquery/dist/jquery.min.js"></script>
+    <script src="bowerlibrary/jquery.js"></script>
     <script src="js/main.js"></script>
+    <!--[if IE]>
+        <script src="bowerlibrary/jquery.placeholder.js"></script>
+        <script>
+            $(document).ready(function(){
+                $('input, textarea').placeholder();
+            });
+        </script>
+    <![endif]-->
 </body>
 </html>

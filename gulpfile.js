@@ -1,5 +1,6 @@
 var gulp = require("gulp"),
-    browserSync = require('browser-sync');
+    browserSync = require('browser-sync'),
+    mainBowerFiles = require('main-bower-files');
     gulp.task('server', function () {
         browserSync({
             port: 9000,
@@ -16,3 +17,8 @@ var gulp = require("gulp"),
         ]).on('change', browserSync.reload);
     });
     gulp.task('default', ['server', 'watch']);
+
+gulp.task('mainfiles', function() {
+    return gulp.src(mainBowerFiles())
+        .pipe(gulp.dest('app/bowerlibrary'))
+});

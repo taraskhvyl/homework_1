@@ -3,9 +3,22 @@
 <head>
     <meta charset="UTF-8">
     <title>Первая домашка</title>
-    <link rel="stylesheet" href="bower/normalize-css/normalize.css">
+    
+    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="img/favicon.ico" type="image/x-icon">
+    
+    <link rel="stylesheet" href="bowerlibrary/normalize.css">
     <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="css/sign.css">
+    <!--[if IE]>
+        <script src="bowerlibrary/html5shiv.js"></script>
+        <script src="bowerlibrary/jquery.placeholder.js"></script>
+        <script>
+            $(document).ready(function(){
+                $('input, textarea').placeholder();
+            });
+        </script>
+    <![endif]-->
 </head>
 <body>
     <div class="wrapper">
@@ -38,7 +51,15 @@
             </small>
         </div>
     </footer>
-    <script src="bower/jquery/dist/jquery.min.js"></script>
+    <script src="bowerlibrary/jquery.js"></script>
     <script src="js/main.js"></script>
+    <!--[if IE]>
+        <script src="bowerlibrary/jquery.placeholder.js"></script>
+        <script>
+            $(document).ready(function(){
+                $('input, textarea').placeholder();
+            });
+        </script>
+    <![endif]-->
 </body>
 </html>
