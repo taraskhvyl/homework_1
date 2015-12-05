@@ -136,3 +136,13 @@ label{
     background: -webkit-linear-gradient(90deg, #c2c0c0 0%, #e3e1e1 86%, #e8e7e7 90%, #e8e7e7 100%);
     background: linear-gradient(0deg, #c2c0c0 0%, #e3e1e1 86%, #e8e7e7 90%, #e8e7e7 100%);
 }
+
+
+@media all and (max-width:640px){
+    .form-block,
+    .form-block__two-col,
+    .form-block input{
+        width: 100%;
+    }
+    
+}

@@ -17,7 +17,7 @@
     margin-left: 28px;
     display: inline-block;
     vertical-align: top;
-    width: 366px;
+    width: 66%;
 }
 .user-info_row_info{
     display: block;
@@ -137,4 +137,31 @@
     position: absolute;
     right: -5px;
     top: 0;
+}
+
+@media(max-width:1040px){
+    .info_content__user-info{
+        margin-left: 14px;
+    }
+
+}
+@media(max-width:760px){
+    .text__row-work{
+        display: block;
+        text-align: center;
+        margin-top: 10px;
+        margin-left: 0;
+        max-width: 100%;
+    }
+    .info_content{
+        text-align: center;
+        padding: 15px 20px;
+    }
+    .info_content__user-info{
+        width: 100%;
+        text-align: left;
+        margin-top: 10px;
+        margin-left: 0;
+    }
+
 }
