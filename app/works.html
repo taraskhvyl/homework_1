@@ -4,6 +4,12 @@
     <meta charset="UTF-8">
     <title>Первая домашка</title>
     
+    <meta name="description" content=""/>
+    <meta name="keywords" content=""/>
+    <meta name="author" content="Taras"/>
+    <meta name="copyright" content="Taras">
+    <meta http-equiv="Reply-to" content="">
+
     <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
     <link rel="icon" href="img/favicon.ico" type="image/x-icon">
     
@@ -21,7 +27,7 @@
                 <div class="header__logo">
                     <a href="/">
                         <img src="img/logo.png" alt="Logo">
-                        <span style="position:absolute;left:-9999px;">Loftschool. от мыслителя к создателю</span>
+                        <span class="text-logo">Loftschool. от мыслителя к создателю</span>
                     </a>
                 </div>
                 <ul class="header__social">
@@ -42,6 +48,57 @@
         </header>
         <div class="main-content">
             <div class="container">
+
+                <section class="content">
+                    <div class="content__info">
+                        <div class="info_heading">Мои работы</div>
+                        <ul class="info_content works">
+                            <li class="work-block">
+                                <div class="work-image"><img src="img/work_1.png" alt="Work"><a href="http://textum.com.ua" class="block-ahead" target="_blank">Подробнее</a></div>
+                                <div class="work-heading">
+                                    <a href="http://textum.com.ua" target="_blank">textum.com.ua</a>
+                                </div>
+                                <div class="work-content">Лендос для компании, которая пишет эффективные тексты</div>
+                            </li>
+                            <li class="work-block">
+                                <div class="work-image"><img src="img/work_21.jpg" alt="Work"><a href="http://era-firan.com" class="block-ahead" target="_blank">Подробнее</a></div>
+                                <div class="work-heading">
+                                    <a href="http://era-firan.com" target="_blank">era-firan.com</a>
+                                </div>
+                                <div class="work-content">Продающая страница для компании, которая продает шторы</div>
+                            </li>
+                            <li class="work-block">
+                                <div class="work-image"><img src="img/work_3.jpg" alt="Work"><a href="http://parus-ua.com" class="block-ahead" target="_blank">Подробнее</a></div>
+                                <div class="work-heading">
+                                    <a href="http://parus-ua.com" target="_blank">parus-ua.com</a>
+                                </div>
+                                <div class="work-content">Лендинг компании, которая спициализируется на логистике</div>
+                            </li>
+                            <li class="work-block">
+                                <div class="work-image"><img src="img/work_4.jpg" alt="Work"><a href="http://gruzovoz125.ru" class="block-ahead" target="_blank">Подробнее</a></div>
+                                <div class="work-heading">
+                                    <a href="http://gruzovoz125.ru" target="_blank">gruzovoz125.ru</a>
+                                </div>
+                                <div class="work-content">Покупка мебели без посредников</div>
+                            </li>
+                            <li class="work-block">
+                                <div class="work-image"><img src="img/work_5.jpg" alt="Work"><a href="http://ooli.ru" class="block-ahead" target="_blank">Подробнее</a></div>
+                                <div class="work-heading">
+                                    <a href="http://ooli.ru" target="_blank">ooli.ru</a>
+                                </div>
+                                <div class="work-content">Лендинг для компании, продающей украшения</div>
+                            </li>
+                            <li class="work-block">
+                                <a href="#" class="add-work">
+                                    <div class="icon__row-work transparent">
+                                        <i class="add-work__icon"></i>
+                                    </div>
+                                    <p class="add-work__text">Добавить проект</p>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </section>
                 <aside class="sidebar">
                     <nav class="nav">
                         <ul class="nav__list">
@@ -66,84 +123,34 @@
                         <ul class="contacts__list">
                             <li class="contacts__list-item list_heading">
                                 Контакты
-                           </li>
+                            </li>
                             <li class="contacts__list-item list_not_heading">
-                                <div class="contacts-icon"> 
-                                    <i class="icon_mail sprite"></i>                                   
-                                </div>
                                 <a href="mailto:taras.khvyl@gmail.com" class="contacts-link">
-                                    taras.khvyl@gmail.com
+                                    <div class="contacts-icon">
+                                        <i class="icon_mail sprite"></i>
+                                    </div>
+                                    <span class="contacts-link-text">taras.khvyl@gmail.com</span>
                                 </a>
                             </li>
                             <li class="contacts__list-item list_not_heading">
-                                <div class="contacts-icon">
-                                    <i class="icon_tel sprite"></i>                                         
-                                </div>
-                                <a href="tel:+79812342323" class="contacts-link">
-                                    +79812342323
+                                <a href="tel:+380502367554" class="contacts-link">
+                                    <div class="contacts-icon">
+                                        <i class="icon_tel sprite"></i>
+                                    </div>
+                                    <span class="contacts-link-text">+380502367554</span>
                                 </a>
                             </li>
                             <li class="contacts__list-item list_not_heading">
-                                <div class="contacts-icon">  
-                                    <i class="icon_skype sprite"></i>                                       
-                                </div>
                                 <a href="skype:tarik_ukraine" class="contacts-link">
-                                    tarik_ukraine
+                                    <div class="contacts-icon">
+                                        <i class="icon_skype sprite"></i>
+                                    </div>
+                                    <span class="contacts-link-text">tarik_ukraine</span>
                                 </a>
                             </li>
                         </ul>
                     </div>
                 </aside>
-                <section class="content">
-                    <div class="content__info">
-                        <div class="info_heading">Мои работы</div>
-                        <div class="info_content works">
-                            <div class="work-block">
-                                <div class="work-image"><img src="img/work_1.png" alt="Work"><a href="http://textum.com.ua" class="block-ahead" target="_blank">Подробнее</a></div>
-                                <div class="work-heading">
-                                    <a href="http://textum.com.ua" target="_blank">textum.com.ua</a>
-                                </div>
-                                <div class="work-content">Лендос для компании, которая пишет эффективные тексты</div>
-                            </div>
-                            <div class="work-block">
-                                <div class="work-image"><img src="img/work_21.jpg" alt="Work"><a href="http://era-firan.com" class="block-ahead" target="_blank">Подробнее</a></div>
-                                <div class="work-heading">
-                                    <a href="http://era-firan.com" target="_blank">era-firan.com</a>
-                                </div>
-                                <div class="work-content">Продающая страница для компании, которая продает шторы</div>
-                            </div>
-                            <div class="work-block">
-                                <div class="work-image"><img src="img/work_3.jpg" alt="Work"><a href="http://parus-ua.com" class="block-ahead" target="_blank">Подробнее</a></div>
-                                <div class="work-heading">
-                                    <a href="http://parus-ua.com" target="_blank">parus-ua.com</a>
-                                </div>
-                                <div class="work-content">Лендинг компании, которая спициализируется на логистике</div>
-                            </div>
-                            <div class="work-block">
-                                <div class="work-image"><img src="img/work_4.jpg" alt="Work"><a href="http://gruzovoz125.ru" class="block-ahead" target="_blank">Подробнее</a></div>
-                                <div class="work-heading">
-                                    <a href="http://gruzovoz125.ru" target="_blank">gruzovoz125.ru</a>
-                                </div>
-                                <div class="work-content">Покупка мебели без посредников</div>
-                            </div>
-                            <div class="work-block">
-                                <div class="work-image"><img src="img/work_5.jpg" alt="Work"><a href="http://ooli.ru" class="block-ahead" target="_blank">Подробнее</a></div>
-                                <div class="work-heading">
-                                    <a href="http://ooli.ru" target="_blank">ooli.ru</a>
-                                </div>
-                                <div class="work-content">Лендинг для компании, продающей украшения</div>
-                            </div>
-                            <div class="work-block">
-                                <div class="add-work">
-                                    <div class="icon__row-work transparent">
-                                        <i class="add-work__icon"></i>
-                                    </div>
-                                    <p class="add-work__text">Добавить проект</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </section>
                 <div class="clearfix"></div>
             </div>
         </div>

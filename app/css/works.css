@@ -50,7 +50,8 @@
     background-color:  rgba(65, 64, 64, 0.07);
     font-weight: 600;
     text-align: center;
-    padding: 5px 0;
+    padding: 5px;
+    word-wrap: break-word;
 }
 .work-heading a{
     color:  #727070;
@@ -71,6 +72,8 @@
 .add-work{
     border-radius: 5px;
     border-style: solid;
+    text-decoration: none;
+    display: block;
     border-width: 1px;
     border-color:  #b6b6b6;
     background: -webkit-linear-gradient(90deg, #edebea 0%, #fbf9f9 94%, #ffffff 100%);

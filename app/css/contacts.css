@@ -6,6 +6,7 @@
     display: inline-block;
     width: 47.19888%;
     text-align: center;
+    margin-bottom: 12px;
 }
 .form-block__two-col.first{
     margin-right: 18px;
@@ -39,16 +40,16 @@
     width: 100%;
     height: 181px;
     resize: none;
-    padding-top: 13px;
+    padding-top: 11px;
 }
 .form-block__textarea{
-    margin-top: 17px;
+    margin-bottom: 11px;
 }
 label{
     color:  #727070;
     font-size: 14px;
     display: block;
-    margin-bottom: 10px;
+    margin-bottom: 7px;
     text-align: left
 }
 ::-webkit-input-placeholder {
@@ -75,7 +76,7 @@ label{
     font-weight: 300;
 }
 .captha-block{
-    margin-bottom: 32px;
+    margin-bottom: 9px;
 }
 .captha-block .form-block__two-col{
     vertical-align: middle;
@@ -84,10 +85,13 @@ label{
     width: 191px;
     height: 32px;
 }
+.captcha-image{
+    width: 100%;
+}
 .write-code{
     color:  #727070;
     font-size: 14px;
-    margin-top: 18px;
+    margin-top: 0;
     margin-bottom: 8px;
 }
 .button-submit{

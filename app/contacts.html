@@ -4,6 +4,12 @@
     <meta charset="UTF-8">
     <title>Первая домашка</title>
     
+    <meta name="description" content=""/>
+    <meta name="keywords" content=""/>
+    <meta name="author" content="Taras"/>
+    <meta name="copyright" content="Taras">
+    <meta http-equiv="Reply-to" content="">
+
     <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
     <link rel="icon" href="img/favicon.ico" type="image/x-icon">
     
@@ -27,7 +33,7 @@
                 <div class="header__logo">
                     <a href="/">
                         <img src="img/logo.png" alt="Logo">
-                        <span style="position:absolute;left:-9999px;">Loftschool. от мыслителя к создателю</span>
+                        <span class="text-logo">Loftschool. от мыслителя к создателю</span>
                     </a>
                 </div>
                 <ul class="header__social">
@@ -48,6 +54,45 @@
         </header>
         <div class="main-content">
             <div class="container">
+
+                <section class="content">
+                    <div class="content__info">
+                        <div class="info_heading">У вас интересный проект? Напишите мне</div>
+                        <div class="info_content">
+                            <form action="#">
+                                <div class="form-block">
+                                    <div class="form-block__two-col first">
+                                        <label for="name">Имя</label>
+                                        <input type="text" id="name" placeholder="Как к Вам обращаться">
+                                    </div>
+                                    <div class="form-block__two-col">
+                                        <label for="name">Email</label>
+                                        <input type="text" id="name" placeholder="Куда мне писать">
+                                    </div>
+                                    <div class="form-block__textarea">
+                                       <label for="message">Сообщение</label>
+                                        <textarea name="message" id="message" placeholder="Кратко в чем суть"></textarea>
+                                    </div>
+                                    <div class="captha-block">
+                                        <p class="write-code">Введите код, указанный на картинке</p>
+                                        <div class="form-block__two-col first">
+                                            <img src="img/captcha.png" alt="Капча" class="captcha-image" width="192" height="81">
+                                        </div>
+                                        <div class="form-block__two-col">
+                                            <input type="text" placeholder="Введите код" class="input-captcha">
+                                        </div>
+                                    </div>
+                                    <div class="form-block__two-col first">
+                                        <button type="submit" class="button-submit">Отправить</button>
+                                    </div>
+                                    <div class="form-block__two-col">
+                                        <button type="reset" class="button-clear">Очистить</button>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </section>
                 <aside class="sidebar">
                     <nav class="nav">
                         <ul class="nav__list">
@@ -72,72 +117,34 @@
                         <ul class="contacts__list">
                             <li class="contacts__list-item list_heading">
                                 Контакты
-                           </li>
+                            </li>
                             <li class="contacts__list-item list_not_heading">
-                                <div class="contacts-icon"> 
-                                    <i class="icon_mail sprite"></i>                                   
-                                </div>
                                 <a href="mailto:taras.khvyl@gmail.com" class="contacts-link">
-                                    taras.khvyl@gmail.com
+                                    <div class="contacts-icon">
+                                        <i class="icon_mail sprite"></i>
+                                    </div>
+                                    <span class="contacts-link-text">taras.khvyl@gmail.com</span>
                                 </a>
                             </li>
                             <li class="contacts__list-item list_not_heading">
-                                <div class="contacts-icon">
-                                    <i class="icon_tel sprite"></i>                                         
-                                </div>
                                 <a href="tel:+380502367554" class="contacts-link">
-                                    +380502367554
+                                    <div class="contacts-icon">
+                                        <i class="icon_tel sprite"></i>
+                                    </div>
+                                    <span class="contacts-link-text">+380502367554</span>
                                 </a>
                             </li>
                             <li class="contacts__list-item list_not_heading">
-                                <div class="contacts-icon">  
-                                    <i class="icon_skype sprite"></i>                                       
-                                </div>
                                 <a href="skype:tarik_ukraine" class="contacts-link">
-                                    tarik_ukraine
+                                    <div class="contacts-icon">
+                                        <i class="icon_skype sprite"></i>
+                                    </div>
+                                    <span class="contacts-link-text">tarik_ukraine</span>
                                 </a>
                             </li>
                         </ul>
                     </div>
                 </aside>
-                <section class="content">
-                    <div class="content__info">
-                        <div class="info_heading">У вас интересный проект? Напишите мне</div>
-                        <div class="info_content">
-                            <form action="#">
-                                <div class="form-block">
-                                    <div class="form-block__two-col first">
-                                        <label for="name">Имя</label>
-                                        <input type="text" id="name" placeholder="Как к Вам обращаться">
-                                    </div>
-                                    <div class="form-block__two-col">
-                                        <label for="name">Email</label>
-                                        <input type="text" id="name" placeholder="Куда мне писать">
-                                    </div>
-                                    <div class="form-block__textarea">
-                                       <label for="message">Сообщение</label>
-                                        <textarea name="message" id="message" placeholder="Кратко в чем суть"></textarea>
-                                    </div>
-                                    <div class="captha-block">
-                                        <p class="write-code">Введите код, указанный на картинке</p>
-                                        <div class="form-block__two-col first">
-                                            <img src="img/captcha.png" alt="Капча">
-                                        </div>
-                                        <div class="form-block__two-col">
-                                            <input type="text" placeholder="Введите код" class="input-captcha">
-                                        </div>
-                                    </div>
-                                    <div class="form-block__two-col first">
-                                        <button type="submit" class="button-submit">Отправить</button>
-                                    </div>
-                                    <div class="form-block__two-col">
-                                        <button type="reset" class="button-clear">Очистить</button>
-                                    </div>
-                                </div>
-                            </form>
-                        </div>
-                    </div>
-                </section>
                 <div class="clearfix"></div>
             </div>
         </div>

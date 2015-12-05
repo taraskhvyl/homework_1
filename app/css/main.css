@@ -24,10 +24,10 @@
 }
 @font-face {
     font-family: Opensans;
-    src: url('opensans-light.eot');
-    src: url('opensans-light.eot?#iefix') format('embedded-opentype'),
-        url('opensans-light.woff') format('woff'),
-        url('opensans-light.svg#open_sanslight') format('svg');
+    src: url('../fonts/opensans-light.eot');
+    src: url('../fonts/opensans-light.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/opensans-light.woff') format('woff'),
+        url('../fonts/opensans-light.svg#open_sanslight') format('svg');
     font-weight: 300;
 }
 body,
@@ -39,15 +39,13 @@ html {
 body {
     font-family: OpenSans, sans-serif;
     font-weight: 400;
-    min-width: 1240px;
-    background: url('../img/main_bg.jpg') no-repeat center top;
+    background: url('../img/main_bg.jpg') no-repeat center top fixed;
     background-size: cover;
 }
 
 .wrapper {
     min-height: 100%;
     margin-bottom: -60px;
-    
 }
 
 .wrapper:after {
@@ -67,9 +65,10 @@ footer {
     height: 0;
 }
 .container {
-    width: 978px;
+    width: 988px;
     margin: 0 auto;
-    padding-right: 18px;
+    padding-right: 23px;
+    padding-left: 5px;
     -webkit-box-sizing: border-box;
             box-sizing: border-box;
 }
@@ -94,13 +93,17 @@ footer {
     -webkit-box-sizing: border-box;
     box-sizing: border-box;
     line-height: 19px;
+    width: 100%;
 }
 
 .header__logo {
     float: left;
     margin-top: 10px;
 }
-
+.text-logo{
+    text-indent: -9999px;
+    display: block;
+}
 .header__social {
     float: right;
     margin-top: 25px;
@@ -193,7 +196,7 @@ footer {
     color: #727070;
     font-size: 20px;
     display: block;
-    padding: 16px 0;
+    padding: 14px 0;
     border: 1px solid #c3c2c2;
     font-weight: 600;
     padding-left: 28px;
@@ -211,11 +214,13 @@ footer {
     background: linear-gradient(0deg, #c2c0c0 0%, #e3e1e1 86%, #e8e7e7 90%, #e8e7e7 100%);
 }
 .nav-link:active{
+    color:  #1e7465;
     background: #3eb799;
     background: -webkit-linear-gradient(90deg, #3eb799 0%, #7ee8ce 100%);
     background: linear-gradient(0deg, #3eb799 0%, #7ee8ce 100%);
 }
 .nav-link.active {
+    color:  #1e7465;
     background: #3eb799;
     background: -webkit-linear-gradient(90deg, #3eb799 0%, #7ee8ce 100%);
     background: linear-gradient(0deg, #3eb799 0%, #7ee8ce 100%);
@@ -233,9 +238,11 @@ footer {
 */
 
 .sidebar__contacts {
-    margin-top: 35px;
+    margin-bottom: 35px;
 }
-
+.nav{
+    margin-bottom: 35px;
+}
 .contacts__list {
     border-radius: 5px;
     background: #fff;
@@ -264,6 +271,7 @@ footer {
     padding: 10px 0 7px 28px;
     font-weight: 600;
     border: none;
+    line-height: 24px;
 }
 
 .contacts__list-item {
@@ -323,10 +331,12 @@ footer {
     color: #727070;
     font-size: 13px;
     text-decoration: none;
-    padding: 10px 10px 9px 39px;
+    padding: 9px 10px 8px 0;
     display: inline-block;
 }
-
+.contacts-link-text{
+    margin-left: 40px;
+}
 .contacts-link:hover {
     text-decoration: underline;
 }
@@ -349,6 +359,7 @@ footer {
     text-align: left;
     position: relative;
     z-index: 9;
+    width: 100%;
 }
 
 .footer__sign_in {
@@ -391,11 +402,14 @@ footer {
     float: right;
     width: 652px;
 }
-
+.content__info{
+    margin-bottom: 35px;
+}
 .info_heading{
     color:  #eeedec;
     font-size: 24px;
-    padding: 13px 43px;
+    padding: 12px 43px 20px;
+    line-height: 24px;
     font-weight: 600;
     border-top-left-radius: 4px;
     border-top-right-radius: 4px;
@@ -407,10 +421,9 @@ footer {
     background: linear-gradient(0deg, #7b7878 0%, #a9a8a8 100%);
 }
 .info_content{
-    padding: 35px 40px 34px 40px;;
+    padding: 29px 40px 31px 40px;;
     margin: 0 1px;
     background-color:  #f5f4f3;
-    margin-bottom: 35px;
     border-style: solid;
     border-width: 1px;
     border-color:  #c3c2c2;
@@ -431,4 +444,24 @@ footer {
     padding: 18px;
     -webkit-box-sizing: border-box;
     box-sizing: border-box;
+}
+
+
+
+
+
+
+@media(max-width:1260px){
+    .container_wide {
+        width: 978px;
+        padding-right: 18px;
+    }
+}
+
+
+@media(max-width:992px){
+    .container{
+        width: 980px;
+        padding: 0 5px;
+    }
 }
