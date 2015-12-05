@@ -42,6 +42,10 @@
     resize: none;
     padding-top: 11px;
 }
+input:focus,
+textarea:focus{
+    border-color: #6FDCC1;
+}
 .form-block__textarea{
     margin-bottom: 11px;
 }

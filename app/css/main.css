@@ -286,13 +286,6 @@ footer {
     position: relative;
 }
 
-.contacts__list-item.list_not_heading:before {
-    content: url('../img/right_corner.png');
-    height: 100%;
-    position: absolute;
-    left: 48px;
-}
-
 .contacts__list-item.list_not_heading:hover {
     background: -webkit-linear-gradient(90deg, rgba(224, 197, 145, 0.45) 0%, rgba(251, 249, 249, 0) 100%);
     background: linear-gradient(0deg, rgba(224, 197, 145, 0.45) 0%, rgba(251, 249, 249, 0) 100%);
@@ -334,8 +327,22 @@ footer {
     padding: 9px 10px 8px 0;
     display: inline-block;
 }
+.contacts-link:before{
+    content: '';
+    height: 100%;
+    position: absolute;
+    left: 48px;
+    width: 38px;
+    top: 0;
+    background: url('../img/right_corner.png') no-repeat;
+    background-size: contain;
+}
 .contacts-link-text{
     margin-left: 40px;
+    max-width: 140px;
+    display: inline-block;
+    word-wrap: break-word;
+    vertical-align: middle;
 }
 .contacts-link:hover {
     text-decoration: underline;
@@ -381,7 +388,7 @@ footer {
     margin-right: 5px;
 }
 
-.sprite_lock:hover {
+.footer__sign_in a:hover .sprite_lock {
     background-position: -157px -33px;
 }
 
@@ -419,6 +426,12 @@ footer {
     background: #A2A2A2;
     background: -webkit-linear-gradient(90deg, #7b7878 0%, #a9a8a8 100%);
     background: linear-gradient(0deg, #7b7878 0%, #a9a8a8 100%);
+}
+.border-radius{
+    border-radius:50%;
+    overflow: hidden;
+    height: 100%;
+    width: 100%;
 }
 .info_content{
     padding: 29px 40px 31px 40px;;

@@ -71,6 +71,9 @@ input[type="checkbox"]{
     height: 15px;
     color:#55c3a4;
 }
+input:focus{
+    border-color: #6FDCC1;
+}
 .block-checkbox{
     position: relative;
     text-align: left
