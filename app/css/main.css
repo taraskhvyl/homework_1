@@ -42,7 +42,9 @@ body {
     background: url('../img/main_bg.jpg') no-repeat center top fixed;
     background-size: cover;
 }
-
+img{
+    max-width: 100%;
+}
 .wrapper {
     min-height: 100%;
     margin-bottom: -60px;
@@ -99,6 +101,7 @@ footer {
 .header__logo {
     float: left;
     margin-top: 10px;
+    width: 95px;
 }
 .text-logo{
     text-indent: -9999px;
@@ -354,8 +357,54 @@ footer {
 .contacts-link:hover span{
     text-decoration: underline;
 }
+.sprite-bottom{
+    background: url('../img/big_social.png');
+    background-repeat: no-repeat;
+    display: block;
+}
+.bottom-social {
+    text-align: center;
+    margin-top: 25px;
+    padding: 0;
+    margin-bottom: 35px;
+    display: none;
+}
 
-
+.bottom__social-item {
+    text-indent: -9999px;
+    list-style: none;
+    display: inline-block;
+    width: 24.02%;
+}
+.bottom__social-item .sprite-bottom{
+    width: 70px;
+    height: 70px;
+    margin: 0 auto;
+}
+.sprite-bottom-fb{
+    background-position: 0px -213px;;
+}
+.sprite-bottom-fb:hover{
+    background-position: -90px -213px;;
+}
+.sprite-bottom-vk{
+    background-position: 0px -141px;;
+}
+.sprite-bottom-vk:hover{
+    background-position: -90px -141px;;
+}
+.sprite-bottom-tw{
+    background-position: 0px -70px;;
+}
+.sprite-bottom-tw:hover{
+    background-position: -90px -70px;;
+}
+.sprite-bottom-git{
+    background-position: 0px -0px;;
+}
+.sprite-bottom-git:hover{
+    background-position: -90px -0px;;
+}
 /*
 
     footer
@@ -561,6 +610,7 @@ footer {
         width: 100%;
         font-weight: normal;
         margin-bottom: 35px;
+        
     }
     .contacts__list{
         background: none;
@@ -628,6 +678,9 @@ footer {
         margin-left: 10px;
         float: right;
         margin-top: 7px;
+    }
+    .bottom-social{
+        display: block;
     }
 }
 @media(min-width:1040px){
