@@ -16,16 +16,16 @@ $(document).ready(function () {
             var viMenu = $('.block-ahead-body').is(":visible");
             if (viMenu === true) {
                 $('.block-ahead-body').fadeOut();
-                $('.nav').css('display','none');
+                $('.nav').removeClass('showMenu');
             }
             else {
                 $('.block-ahead-body').fadeIn();
-                $('.nav').css('display','block');
+                $('.nav').addClass('showMenu');
             }
         }
     );
     function hideMenu() {
-        $('.nav').fadeOut();
+        $('.nav').removeClass('showMenu');
         $('.block-ahead-body').fadeOut();
     }
     $('.block-ahead-body').click(
