@@ -102,6 +102,8 @@ footer {
     float: left;
     margin-top: 10px;
     width: 95px;
+    overflow: hidden;
+    height: 71px;
 }
 .text-logo{
     text-indent: -9999px;
@@ -582,6 +584,7 @@ footer {
     .header__logo{
         width: 68px;
         margin-top: 5px;
+        height: 51px;
     }
     .header__logo img{
         width: 100%;
