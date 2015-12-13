@@ -128,12 +128,12 @@
                                 </a>
                             </li>
                             <li class="nav__list-item">
-                                <a href="/works" class="nav-link active" title="My works">
+                                <a href="/works.html" class="nav-link active" title="My works">
                                     Мои Работы
                                 </a>
                             </li>
                             <li class="nav__list-item">
-                                <a href="/contacts" class="nav-link" title="Feedback">
+                                <a href="/contacts.html" class="nav-link" title="Feedback">
                                     Обратная связь
                                 </a>
                             </li>
@@ -210,7 +210,43 @@
             </small>
         </div>
     </footer>
+    <div id="popup" class="popup-addProject">
+        <small>Добавление проекта</small>
+        <div class="popup__content">
+            <img src="img/closePopup.png" class="b-close" alt="Закрыть">
+            <div class="error-mess message">
+                <div class="close-red"></div>
+                <span class="bold-message">Ошибка!</span>
+                Невозможно добавить проект
+            </div>
+            <div class="success-mess message">
+                <span class="bold-message">Ура!</span>
+                Проект успешно добавлен!
+            </div>
+            <form id="modal-form">
+                <label for="nameProject">Название проекта</label>
+                <input name="nameProject" type="text" id="nameProject" placeholder="Введите название">
+                <label for="fileProject">Картинка проекта</label>
+                  <div class="popup__inputFile">
+                      <input id="uploadFile" placeholder="Загрузите изображение"  disabled="disabled"/>
+                    <div class="file-upload-block">
+                        <input type="file" id="fileProject">
+                        <span class="fileAdd-span sprite">
+                            <span class="icon-drive"></span>
+                        </span>
+                    </div>
+                </div>
+                <label for="urlProject">URL проекта</label>
+                <input name="urlProject" type="text" id="urlProject" placeholder="Добавить ссылку">
+                <label for="descriptionProject">Описание</label>
+                <textarea name="descriptionProject" id="descriptionProject" placeholder="Пара слов о Вашем проекте"></textarea>
+                <button type="submit" class="popup__buttonAdd">Добавить</button>
+            </form>
+        </div>
+    </div>
     <script src="bowerlibrary/jquery.js"></script>
+    <script src="bowerlibrary/jquery.bpopup.js"></script>
+    <script src="js/addProject.js"></script>
     <script src="js/main.js"></script>
 </body>
 </html>

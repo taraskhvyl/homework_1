@@ -590,6 +590,29 @@ footer {
     z-index: 104;
 }
 
+::-webkit-input-placeholder {
+    color:  #c7c6c6;
+    font-size: 12px;
+    font-weight: 300;
+}
+
+:-moz-placeholder { 
+    color:  #c7c6c6;
+    font-size: 12px;
+    font-weight: 300;
+}
+
+::-moz-placeholder {
+    color:  #c7c6c6;
+    font-size: 12px;
+    font-weight: 300;
+}
+
+:-ms-input-placeholder {  
+    color:  #c7c6c6;
+    font-size: 12px;
+    font-weight: 300;
+}
 
 @media all and (max-width:1040px){
     

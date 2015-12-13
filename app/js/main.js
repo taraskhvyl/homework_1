@@ -8,8 +8,6 @@ $(document).ready(function () {
             $(this).parent().find('.block-ahead').fadeOut(100);
         }
     );
-
-    
     
     $('.mobile-menu').click(
         function () {
