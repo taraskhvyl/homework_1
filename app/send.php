@@ -1,14 +1,16 @@
 <?php
 
     $name = $_POST['nameProject'];
+    $url = $_POST['urlProject'];
+    $descriptionProject = $_POST['descriptionProject'];
     $data = array();
     
-    if($name === ''){
+    if(($name === '')||($url === '')||($descriptionProject === '')){
         $data['status'] = 'error';
-        $data['text'] = 'Заполните имя!';
+
     } else {
         $data['status'] = 'OK';
-        $data['text'] = 'Вы молодец!';
+
     }
 
     header("Content-type: application/json");

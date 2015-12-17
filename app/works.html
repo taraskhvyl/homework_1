@@ -1,28 +1,43 @@
 <!DOCTYPE html>
 <html lang="ru_RU">
+
 <head>
     <meta charset="UTF-8">
     <title>Первая домашка</title>
-    
+
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
-    <meta name="description" content=""/>
-    <meta name="keywords" content=""/>
-    <meta name="author" content="Taras"/>
+
+    <meta name="description" content="" />
+    <meta name="keywords" content="" />
+    <meta name="author" content="Taras" />
     <meta name="copyright" content="Taras">
     <meta http-equiv="Reply-to" content="">
 
     <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
     <link rel="icon" href="img/favicon.ico" type="image/x-icon">
-    
+
     <link rel="stylesheet" href="bowerlibrary/normalize.css">
     <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="css/works.css">
     <!--[if IE]>
         <script src="bowerlibrary/html5shiv.js"></script>
+        <script src="bowerlibrary/jquery.placeholder.js"></script>
+        <script>
+            $(document).ready(function(){
+                $('input, textarea').placeholder();
+            });
+        </script>
+        <link rel="stylesheet" type="text/css" media="all" href="css/style-ie.css"/>
     <![endif]-->
+
 </head>
+
 <body>
+    <!--[if IE]>
+        <div class="bg-ie">
+            <img src="/img/main_bg.jpg" alt="Background">
+        </div>
+    <![endif]-->
     <div class="wrapper">
         <div class="block-ahead-body"></div>
         <header class="header">
@@ -116,7 +131,7 @@
                                 </div>
                             </li>
                         </ul>
-                        
+
                     </div>
                 </section>
                 <aside class="sidebar">
@@ -201,8 +216,7 @@
         <div class="container">
             <div class="footer__sign_in">
                 <a href="/sign.html" title="Sign in">
-                    <i class="sprite sprite_lock"></i>
-                    вход
+                    <i class="sprite sprite_lock"></i> вход
                 </a>
             </div>
             <small class="footer__copyright">
@@ -216,37 +230,46 @@
             <img src="img/closePopup.png" class="b-close" alt="Закрыть">
             <div class="error-mess message">
                 <div class="close-red"></div>
-                <span class="bold-message">Ошибка!</span>
-                Невозможно добавить проект
+                <span class="bold-message">Ошибка!</span> Невозможно добавить проект
             </div>
             <div class="success-mess message">
-                <span class="bold-message">Ура!</span>
-                Проект успешно добавлен!
+                <span class="bold-message">Ура!</span> Проект успешно добавлен!
             </div>
             <form id="modal-form">
-                <label for="nameProject">Название проекта</label>
-                <input name="nameProject" type="text" id="nameProject" placeholder="Введите название">
-                <label for="fileProject">Картинка проекта</label>
-                  <div class="popup__inputFile">
-                      <input id="uploadFile" placeholder="Загрузите изображение"  disabled="disabled"/>
-                    <div class="file-upload-block">
-                        <input type="file" id="fileProject">
-                        <span class="fileAdd-span sprite">
-                            <span class="icon-drive"></span>
-                        </span>
+                <div class="input-block">
+                    <label for="nameProject">Название проекта</label>
+                    <input name="nameProject" type="text" id="nameProject" placeholder="Введите название">
+                </div>
+                <div class="input-block">
+                    <label for="fileProject">Картинка проекта</label>
+                    <div class="popup__inputFile">
+                        <input id="uploadFile" name="uploadFile" placeholder="Загрузите изображение" readonly/>
+                       <!--  <div class="file-upload-block"> -->
+                            <input type="file"  id="fileProject">
+                            <span class="fileAdd-span">
+                                <span class="icon-drive"></span>
+                            </span>
+                       <!--  </div> -->
                     </div>
                 </div>
-                <label for="urlProject">URL проекта</label>
-                <input name="urlProject" type="text" id="urlProject" placeholder="Добавить ссылку">
-                <label for="descriptionProject">Описание</label>
-                <textarea name="descriptionProject" id="descriptionProject" placeholder="Пара слов о Вашем проекте"></textarea>
+                <div class="input-block">
+                    <label for="urlProject">URL проекта</label>
+                    <input name="urlProject" type="url" id="urlProject" placeholder="Добавить ссылку">
+                </div>
+                <div class="input-block">
+                    <label for="descriptionProject">Описание</label>
+                    <textarea name="descriptionProject" id="descriptionProject" placeholder="Пара слов о Вашем проекте"></textarea>
+                </div>
                 <button type="submit" class="popup__buttonAdd">Добавить</button>
             </form>
         </div>
     </div>
     <script src="bowerlibrary/jquery.js"></script>
     <script src="bowerlibrary/jquery.bpopup.js"></script>
-    <script src="js/addProject.js"></script>
+    <script src="bowerlibrary/jquery.validate.js"></script>
     <script src="js/main.js"></script>
+    <script src="js/addProject.js"></script>
+    
 </body>
+
 </html>

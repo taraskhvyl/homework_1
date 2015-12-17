@@ -6,6 +6,7 @@
     <title>Первая домашка</title>
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=8" />
    
     <meta name="description" content="" />
     <meta name="keywords" content="" />
@@ -22,9 +23,17 @@
     <!--[if IE]>
         <script src="bowerlibrary/html5shiv.js"></script>
     <![endif]-->
+    <!--[if lt IE 9]>
+        <link rel="stylesheet" type="text/css" media="all" href="css/style-ie.css"/>
+    <![endif]-->
 </head>
 
 <body>
+    <!--[if IE]>
+        <div class="bg-ie">
+            <img src="/img/main_bg.jpg" alt="Background">
+        </div>
+    <![endif]-->
     <div class="wrapper">
         <div class="block-ahead-body"></div>
         <header class="header">

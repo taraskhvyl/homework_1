@@ -16,8 +16,9 @@
     <link rel="icon" href="img/favicon.ico" type="image/x-icon">
     
     <link rel="stylesheet" href="bowerlibrary/normalize.css">
-    <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="css/contacts.css">
+    <link rel="stylesheet" href="css/main.css">
+    
     <!--[if IE]>
         <script src="bowerlibrary/html5shiv.js"></script>
         <script src="bowerlibrary/jquery.placeholder.js"></script>
@@ -26,9 +27,15 @@
                 $('input, textarea').placeholder();
             });
         </script>
+        <link rel="stylesheet" type="text/css" media="all" href="css/style-ie.css"/>
     <![endif]-->
 </head>
 <body>
+    <!--[if IE]>
+        <div class="bg-ie">
+            <img src="/img/main_bg.jpg" alt="Background">
+        </div>
+    <![endif]-->
     <div class="wrapper">
         <div class="block-ahead-body"></div>
         <header class="header">
@@ -66,15 +73,22 @@
                     <div class="content__info">
                         <div class="info_heading">У вас интересный проект? Напишите мне</div>
                         <div class="info_content">
-                            <form action="#">
+                            <form id="formFeedback">
                                 <div class="form-block">
+                                    <div class="error-mess message">
+                                        <div class="close-red"></div>
+                                        <span class="bold-message">Ошибка в заполнении!</span> Невозможно добавить проект
+                                    </div>
+                                    <div class="success-mess message">
+                                        <span class="bold-message">Ура!</span> Проект успешно добавлен!
+                                    </div>
                                     <div class="form-block__two-col first">
                                         <label for="name">Имя</label>
                                         <input name="name" type="text" id="name" placeholder="Как к Вам обращаться">
                                     </div>
                                     <div class="form-block__two-col">
                                         <label for="name">Email</label>
-                                        <input name="email" type="text" id="name" placeholder="Куда мне писать">
+                                        <input name="email" type="email" id="email" placeholder="Куда мне писать">
                                     </div>
                                     <div class="form-block__textarea">
                                        <label for="message">Сообщение</label>
@@ -86,7 +100,7 @@
                                             <img src="img/captcha.png" alt="Капча" class="captcha-image" width="192" height="81">
                                         </div>
                                         <div class="form-block__two-col">
-                                            <input type="text" placeholder="Введите код" class="input-captcha">
+                                            <input type="text" name="captcha" placeholder="Введите код" class="input-captcha">
                                         </div>
                                     </div>
                                     <div class="form-block__two-col first">
@@ -193,6 +207,8 @@
         </div>
     </footer>
     <script src="bowerlibrary/jquery.js"></script>
+    <script src="bowerlibrary/jquery.validate.js"></script>
+    <script src="js/formFeedback.js"></script>
     <script src="js/main.js"></script>
     <!--[if IE]>
         <script src="bowerlibrary/jquery.placeholder.js"></script>
