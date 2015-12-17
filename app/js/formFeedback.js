@@ -47,7 +47,7 @@ var addProject = (function () {
 
         e.preventDefault();
         var form = $(this),
-            url = 'send.php',
+            url = 'feedback.php',
             data = form.serialize();
         //_checkFile();
 
@@ -79,6 +79,7 @@ var addProject = (function () {
 
    var _resetAll = function(){
        $('#formFeedback').validate().resetForm();
+       $('.message').hide();
    }
     return {
         init: init

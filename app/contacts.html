@@ -73,21 +73,21 @@
                     <div class="content__info">
                         <div class="info_heading">У вас интересный проект? Напишите мне</div>
                         <div class="info_content">
+                            <div class="error-mess message">
+                                <div class="close-red"></div>
+                                <span class="bold-message">Ошибка в заполнении!</span> Невозможно отправить форму
+                            </div>
+                            <div class="success-mess message">
+                                <span class="bold-message">Ура!</span> Проект успешно добавлен!
+                            </div>
                             <form id="formFeedback">
                                 <div class="form-block">
-                                    <div class="error-mess message">
-                                        <div class="close-red"></div>
-                                        <span class="bold-message">Ошибка в заполнении!</span> Невозможно добавить проект
-                                    </div>
-                                    <div class="success-mess message">
-                                        <span class="bold-message">Ура!</span> Проект успешно добавлен!
-                                    </div>
                                     <div class="form-block__two-col first">
                                         <label for="name">Имя</label>
                                         <input name="name" type="text" id="name" placeholder="Как к Вам обращаться">
                                     </div>
                                     <div class="form-block__two-col">
-                                        <label for="name">Email</label>
+                                        <label for="email">Email</label>
                                         <input name="email" type="email" id="email" placeholder="Куда мне писать">
                                     </div>
                                     <div class="form-block__textarea">
