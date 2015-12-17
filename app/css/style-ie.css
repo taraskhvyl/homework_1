@@ -23,16 +23,10 @@ body{
     min-width: 50%;
     min-height: 50%;
 }
-.error-mess{
-    background-color: #CB6945;
-    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=33)";
-    
-}
-.block-ahead{
-    background: #6B6969;
-    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=50)";
-    -ms-filter: “alpha(opacity=50)”; 
-}
+
 .form-block .input-captcha{
     padding: 0;
+}
+div.error{
+    position: relative;
 }

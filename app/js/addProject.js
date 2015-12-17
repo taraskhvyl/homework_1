@@ -34,7 +34,11 @@ var addProject = (function () {
                 form.validate().resetForm();
                 form.find('input,textarea').removeClass('error');
             }
-        });
+        },
+        function(){
+            $('input, textarea').placeholder();
+        }
+        );
         
     };
     
