@@ -25,8 +25,13 @@ body{
 }
 
 .form-block .input-captcha{
-    padding: 0;
+    padding-top: 0;
+    line-height: 32px
 }
 div.error{
     position: relative;
+}
+div.error:after,
+div.error:before{
+    display: none;
 }
