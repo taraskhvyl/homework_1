@@ -309,6 +309,10 @@
     .info_content .work-block:not(:nth-child(3n)){
         margin: 0;
     }
+    .work-block{
+        -webkit-box-sizing: border-box;
+                box-sizing: border-box
+    }
     .info_content.works{
         padding: 15px;
     }

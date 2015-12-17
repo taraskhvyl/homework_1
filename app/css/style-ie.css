@@ -1,7 +1,9 @@
+/*
 .container {
     width: 988px;
     padding: 0;
 }
+*/
 body{
     background: none;
 }
@@ -34,4 +36,45 @@ div.error{
 div.error:after,
 div.error:before{
     display: none;
+}
+@media (min-width:100px) and (max-width:1040px){
+    .container{
+        padding: 0 40px;
+        width: auto;
+        max-width: 100%;
+        display: inline-block;
+    }   
+    .container_wide{
+        width: 100%;
+    }
+    footer .container{
+        padding: 0 10px;
+    }
+    .footer__copyright{
+        font-size: 8px;
+        margin-left: 10px;
+        float: right;
+        margin-top: 7px;
+    }
+    .bottom-social{
+        display: block;
+    }
+    .content{
+        float: none;
+        width: 100%;
+    }
+    .mobile-menu{
+        float: right;
+    }
+    .soc-item-block{
+        background-color: #fbf9f9;
+        border-color: none;
+    }
+    .soc-item-block{
+        border: none;
+    }
+    .work-block{
+        -webkit-box-sizing: border-box;
+                box-sizing: border-box
+    }
 }
