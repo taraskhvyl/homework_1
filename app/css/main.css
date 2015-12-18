@@ -642,6 +642,15 @@ footer {
     display: block;
 }
 
+.close-red{
+    position: absolute;
+    right: 8px;
+    top: 8px;
+    width: 11px;
+    height: 11px;
+    background: url('../img/red_close.png') no-repeat center;
+    cursor: pointer
+}
 
 /*
 * tooltips

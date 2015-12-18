@@ -285,15 +285,6 @@
 
 
 
-.close-red{
-    position: absolute;
-    right: 8px;
-    top: 8px;
-    width: 11px;
-    height: 11px;
-    background: url('../img/red_close.png') no-repeat center;
-    cursor: pointer
-}
 /*
  * Конец Стили для модалки
  */
@@ -304,6 +295,8 @@
         width: 49.5%;
         margin: 0;
         padding: 20px;
+        -webkit-box-sizing: border-box;
+                box-sizing: border-box;
         display: inline-block;
     }
     .info_content .work-block:not(:nth-child(3n)){
