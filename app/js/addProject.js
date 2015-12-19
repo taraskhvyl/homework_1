@@ -12,7 +12,7 @@ var addProject = (function () {
         $('.icon-drive').on('click', _clickAddFile);
         $('#modal-form').on('submit', _submitForm);
         $('#formFeedback').on('submit', _submitFeedback);
-        $('.close-red').on('click', _closeError);
+        
         
     };
     
@@ -119,12 +119,6 @@ var addProject = (function () {
     var _clickAddFile = function () {
       
         $('#fileProject').click();
-        
-    };
-    
-    var _closeError = function () {
-        
-        $('.error-mess').hide();
         
     };
     

@@ -1,12 +1,4 @@
 {
   "name": "MyFirstRep",
-  "dependencies": {
-    "normalize-css": "normalize.css#~3.0.3",
-    "html5shiv": "~3.7.3",
-    "jquery-placeholder": "~2.3.0",
-    "bPopup": "bpopup#~0.11.0",
-    "jquery-validation": "~1.14.0",
-    "jquery": "1.7.2"
-  },
-  "devDependencies": {}
+  "dependencies": {}
 }

@@ -21,7 +21,7 @@ $(document).ready(function () {
         },
         messages: {
             name: 'введите имя',
-            email: 'введите email',
+            email: 'некорректный email',
             message: 'ваш вопрос',
             captcha: 'код капчи'
         },
