@@ -41,8 +41,8 @@
                <div class="form-sign-in">
                     <small>Авторизируйтесь</small>
                     <form action="#">
-                        <input type="text" placeholder="Введите Email">
-                        <input type="text" class="input-password" placeholder="Введите пароль">
+                        <input class="sign-email" type="text" placeholder="Введите Email">
+                        <input type="password" class="input-password" placeholder="Введите пароль">
                         <div class="block-checkbox">
                             <input type="checkbox" id="save-me"><label for="save-me" class="text-save-me">Запомнить меня?</label>
                         </div>
@@ -66,13 +66,12 @@
         </div>
     </footer>
     
-    <!-- build:js js/libraries.min.js -->
-    <script src="bowerlibrary/jquery.js"></script>
+    <!-- build:js js/jquery.min.js -->
+    <script src="/bowerlibrary/jquery.js"></script>
     <!-- endbuild -->
     
-    <!-- build:js js/all.min.js -->
+    
     <script src="js/main.js"></script>
-    <!-- endbuild -->
 
     <!--[if IE]>
         <script src="bowerlibrary/jquery.placeholder.js"></script>

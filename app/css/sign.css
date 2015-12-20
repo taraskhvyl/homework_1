@@ -35,7 +35,8 @@
    -webkit-box-shadow: 5px 10px 27px 0px rgba(159, 159, 159, 0.75);
             box-shadow: 5px 10px 27px 0px rgba(159, 159, 159, 0.75);
 }
-input[type="text"]{
+.sign-email,
+.input-password{
     border-radius: 4px;
     border-width: 1px;
     border-color:  #48cbe8;
@@ -62,7 +63,7 @@ input[type="text"]{
 input.input-password{
     background-image: url('../img/input_password.png');
 }
-input[type="checkbox"]{
+.form-sign-in input[type="checkbox"]{
     display: none;
     border-radius: 3px;
     background-color:  #fff;
@@ -71,7 +72,7 @@ input[type="checkbox"]{
     height: 15px;
     color:#55c3a4;
 }
-input:focus{
+.form-sign-in input:focus{
     border-color: #6FDCC1;
 }
 .block-checkbox{
@@ -100,7 +101,7 @@ input:focus{
     box-shadow: inset 0px 1px 5px 0px rgba(0,0,0,0.35);
     border-radius: 3px;
 }
-input[type=checkbox]:checked + label:before {
+.form-sign-in input[type=checkbox]:checked + label:before {
     content: url('../img/checkbox.png');
     text-shadow: 1px 1px 1px rgba(0, 0, 0, .2);
     font-size: 15px;

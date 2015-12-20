@@ -5,7 +5,8 @@ var gulp            = require("gulp"),
     uglify          = require('gulp-uglify'),
     concat          = require('gulp-concat'),
     imagemin        = require('gulp-imagemin'),
-    useref          = require('gulp-useref');
+    useref          = require('gulp-useref'),
+    rename          = require("gulp-rename");
 
 
 
@@ -37,19 +38,32 @@ gulp.task('mainfiles', function() {
 
 // сборка проекта
 gulp.task('scripts', function () {
-    return gulp.src('app/js/*.js')
+    return gulp.src(['app/js/*.js','!app/js/main.js'])
         .pipe(concat('all.min.js'))
         .pipe(uglify())
         .pipe(gulp.dest('dist/js'));
 });
 gulp.task('library-js', function () {
-    return gulp.src('app/bowerlibrary/*.js')
+    return gulp.src(['app/bowerlibrary/*.js','!app/bowerlibrary/jquery.js'])
         .pipe(concat('libraries.min.js'))
         .pipe(uglify())
         .pipe(gulp.dest('dist/js'));
 });
+gulp.task('jquery-min', function() {
+    return gulp.src(['app/bowerlibrary/jquery.js'])
+        .pipe(uglify())
+        .pipe(rename('jquery.min.js'))
+        .pipe(gulp.dest('dist/js'));
+    
+})
+gulp.task('main-js-min', function() {
+    return gulp.src(['app/js/main.js'])
+        .pipe(uglify())
+        .pipe(rename('main.min.js'))
+        .pipe(gulp.dest('dist/js'));
+})
 gulp.task('minify-css', function() {
-    return gulp.src('app/css/*.css')
+    return gulp.src(['app/css/*.css','!app/css/style-ie.css'])
         .pipe(concat('all.min.css'))
         .pipe(minifyCss({compatibility: 'ie8'}))
         .pipe(gulp.dest('dist/css'));
@@ -87,4 +101,4 @@ gulp.task('extras', function () {
     ]).pipe(gulp.dest('dist'));
 });
 
-gulp.task('dist', ['scripts', 'minify-css', 'minify-img', 'library-css', 'library-js', 'fonts', 'extras','useref']);
+gulp.task('dist', ['scripts', 'minify-css', 'minify-img', 'library-css', 'library-js', 'fonts', 'extras','useref', 'jquery-min', 'main-js-min']);
