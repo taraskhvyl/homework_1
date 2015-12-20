@@ -11,7 +11,8 @@ $(document).ready(function () {
                 email: true
             },
             message: {
-                required: true
+                required: true,
+                minlength: 15
             },
             captcha: {
                 required: true,
@@ -22,8 +23,8 @@ $(document).ready(function () {
         messages: {
             name: 'введите имя',
             email: 'некорректный email',
-            message: 'ваш вопрос',
-            captcha: 'код капчи'
+            message: 'Введите ваш вопрос<br>(мин.15 символов)',
+            captcha: 'Введите код капчи'
         },
     });   
 });
